@@ -1,0 +1,17 @@
+{
+  "name": "week1-se",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+  "build": "tsc",
+  "test": "echo \"No tests yet\"",
+  "dev": "tsc --watch"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
