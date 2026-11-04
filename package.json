@@ -1,17 +1,23 @@
 {
   "name": "week1-se",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
-"scripts": {
-  "build": "tsc",
-  "test": "echo \"No tests yet\"",
-  "dev": "tsc --watch"
-},
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"No tests yet\"",
+    "dev": "tsc --watch"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.6",
     "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
   }
 }
