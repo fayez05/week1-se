@@ -1,12 +1,10 @@
+
 import express from "express";
 
 const app = express();
 
 app.use(express.json());
 
-const PORT = 3000;
-
-// GET /courses
 app.get("/courses", (req, res) => {
     const courses = [
         { id: 1, name: "Software Engineering" },
@@ -17,7 +15,6 @@ app.get("/courses", (req, res) => {
     res.status(200).json(courses);
 });
 
-// POST /enrolments
 app.post("/enrolments", (req, res) => {
     const { studentId, courseId } = req.body;
 
@@ -39,7 +36,4 @@ app.post("/enrolments", (req, res) => {
     });
 });
 
-// Start server
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+export default app;

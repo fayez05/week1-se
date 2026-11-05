@@ -1,12 +1,11 @@
+
 type GradeResult = {
     percentage: number;
     letter: string;
 };
 
-function calculateGrade(scores: number[], totalMarks: number): GradeResult {
-
+export function calculateGrade(scores: number[], totalMarks: number): GradeResult {
     const obtainedMarks = scores.reduce((sum, score) => sum + score, 0);
-
     const percentage = (obtainedMarks / totalMarks) * 100;
 
     let letter: string;
@@ -23,8 +22,5 @@ function calculateGrade(scores: number[], totalMarks: number): GradeResult {
         letter = "F";
     }
 
-    return {
-        percentage,
-        letter
-    };
+    return { percentage, letter };
 }
